@@ -1,0 +1,30 @@
+<view class="info">
+      <view class="left">
+        <view class="containerInfo">
+          <van-image src='{{imgData}}' class="itemImg" use-loading-slot use-error-slot fit="contain" width="64" height="64">
+            <van-loading slot="loading" type="spinner" size="12" vertical /> 
+            <tett slot="error">
+              <van-image src='/image/emptyerror.png' fit="none" width="24" height="24"></van-image>
+              加载失败
+            </tett>
+          </van-image>
+
+          <view class="itemInfor">
+            <dms-infoline informations="{{mationInfoLists}}" col="2" isBlod="{{false}}"></dms-infoline>
+          </view>
+        </view>
+      </view>
+
+      <view class="right">
+        <view class="cileBg"></view> 
+        
+        <view class="containerTotal">
+          <ec-canvas id="my-echarts" canvas-id="echarts" ec="{{ecData}}"></ec-canvas>
+        </view>
+
+        <van-image src='/image/rbg.png' class="dooka" use-loading-slot fit="contain" width="108" height="108">
+          <van-loading slot="loading" type="spinner" size="12" vertical /> 
+        </van-image>
+        
+      </view>
+</view>

@@ -1,0 +1,38 @@
+.itemInforRow {
+  margin-bottom: 5px;
+  color: #a0a0a0;
+  font-size: 11px;
+  vertical-align: middle;
+  white-space: nowrap;
+  float: left;
+  line-height: 16px;
+}
+.itemInforRow .title {
+  display: inline-block;
+  margin-right: 4px;
+}
+.itemInforRow .value {
+  display: inline-block;
+  margin-right: 8px;
+}
+.itemInforRow .value.b {
+  font-weight: 900;
+  color: #5c5c5e;
+}
+.itemInforRow.blodLab {
+  font-weight: 680;
+  font-size: 14px;
+  color: #3e3e3e;
+  display: inline-block;
+  padding-right: 4px;
+}
+.itemInforRow.blockLab {
+  display: block !important;
+  max-width: 100% !important;
+  float: none;
+  clear: both;
+}
+.itemInforRow.btnLab {
+  font-style: italic;
+  color: #3e3e3e;
+}

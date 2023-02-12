@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/home/index",
+    "pages/attendance/index",
+    "pages/calendar/index",
+    "pages/equipment/index",
+    "pages/user/index",
+    "components/user/index"
+  ],
+  "tabBar": {
+    "custom": true,
+    "color": "#acb5c6",
+    "selectedColor": "#fb9300",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/home/index",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/attendance/index",
+      "iconPath": "image/attendance.png",
+      "selectedIconPath": "image/attendance_hover.png",
+      "text": "打卡"
+    }, {
+      "pagePath": "pages/calendar/index",
+      "iconPath": "image/calendar.png",
+      "selectedIconPath": "image/calendar_hover.png",
+      "text": "日历"
+    }, {
+      "pagePath": "pages/user/index",
+      "iconPath": "image/user.png",
+      "selectedIconPath": "image/user_hover.png",
+      "text": "我的"
+    }]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "DooKa 嘟嘟卡",
+    "navigationBarTextStyle":"white",
+    "navigationStyle":"custom"
+  }
+}

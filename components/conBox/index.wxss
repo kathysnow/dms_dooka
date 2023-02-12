@@ -1,0 +1,69 @@
+.containerAll {
+  background-color: #f5f6fa;
+  box-shadow: 0 0 6px 0px rgba(199, 207, 239, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(199, 207, 239, 0.13);
+}
+.containerAll.noshadow {
+  box-shadow: none;
+  border-bottom: 0;
+}
+.containerAll.noshadow .containerBoxItem {
+  box-shadow: none !important;
+}
+.containerAll .zanbottom .item {
+  line-height: 36px;
+  font-size: 12px;
+  text-align: center;
+  color: #74afed;
+}
+.containerAll .zanbottom .item text {
+  color: #4e505d;
+  display: inline-block;
+  padding-left: 4px;
+}
+.containerBoxItem {
+  background-color: #fcfdff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding-bottom: 12px;
+  box-shadow: 0 0 6px 0px rgba(199, 207, 239, 0.3);
+}
+.containerBoxItem .title {
+  padding: 8px 16px;
+  font-weight: 800;
+  line-height: 12px;
+  background-color: #fff;
+  font-size: 11px;
+}
+.containerBoxItem .title::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 10px;
+  background-color: #fca332;
+  position: relative;
+  left: -4px;
+  top: 1px;
+}
+.containerBoxItem .title .des {
+  font-weight: 200;
+  display: inline-block;
+  padding: 0 4px;
+}
+.containerBoxItem .total {
+  padding: 0 8px 8px 20px;
+  font-size: 32px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 18px;
+  color: #fca332;
+  background-color: #fff;
+}
+.containerBoxItem .lineBox {
+  margin-left: 20px;
+  min-height: 30px;
+}
+.containerBoxItem .lineBox .dmsline {
+  width: 100%;
+}

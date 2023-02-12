@@ -1,0 +1,3 @@
+<view class="box">
+  <home-page isSortTop="{{false}}" title="主页"></home-page>
+</view>

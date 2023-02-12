@@ -1,0 +1,21 @@
+<view class="container">
+  <dms-topimg title="设备"></dms-topimg>
+  <dms-infobox></dms-infobox>
+
+  <view class="containerIconBtn">
+    <dms-btnmenu iconBtnLists="{{iconBtnLists}}"></dms-btnmenu>
+  </view>
+
+  <view class="containerCommen">  
+    <dms-conbox title="工单" description="sxxxxxx3442" informations="{{informations}}" isshadow="{{false}}" col="{{3}}"></dms-conbox>
+  </view>
+
+  <view class="containerCommen">  
+    <dms-linebox title="UCP/良率" ></dms-linebox>
+  </view>
+
+  <view class="containerGold">  
+    <dms-calendar title="日历" informations="{{stepsCalendar}}"></dms-calendar>
+  </view>
+  
+</view>

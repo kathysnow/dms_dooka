@@ -1,0 +1,7 @@
+<van-grid column-num="5" border="{{ false }}">
+  <van-grid-item use-slot wx:for="{{ iconBtnLists }}" wx:for-item="item" text="{{item.label}}" link-type="navigateTo"
+    url="{{item.url}}" wx:key="index">
+      <image src="/image/iconBtn_{{index}}.png" style="width: 36px; height: 36px;" />
+      <view class="des">{{item.label}}</view>
+  </van-grid-item>
+</van-grid>

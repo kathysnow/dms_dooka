@@ -1,0 +1,4 @@
+<view class="container">
+  <dms-topimg title="打卡" isShowLeftBtn="{{false}}"></dms-topimg>
+  <dms-infobox></dms-infobox>
+</view>

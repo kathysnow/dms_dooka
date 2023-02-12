@@ -1,0 +1,12 @@
+page{
+  background-color: #eff6fd;
+}
+.b{
+  font-weight: 800;
+}
+.inlineBlock{
+  display: inline-block;
+}
+.blockBox{
+  display: block;
+}

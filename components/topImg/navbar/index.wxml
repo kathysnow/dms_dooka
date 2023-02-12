@@ -1,0 +1,18 @@
+<view class="nav-bar" style="padding-top:{{ phoneInfo.safeArea.top}}px;">
+    <view class="van-nav-bar" style="height: {{phoneInfo.safeArea.top}}px;">
+        <view class="title_view">
+            <view class="title_view_left"  wx:if="{{isShowLeftBtn}}">
+                <view bindtap="onClickLeft">
+                <!-- 返回图标 -->
+                    <van-icon class="van-icon" name="arrow-left" />
+                </view>
+                <!-- 首页图标 -->
+                <!--<view bindtap="onBackHome">
+                    <van-icon class="van-icon" name="wap-home-o" />
+                </view>-->
+            </view>
+            <!-- 标题 -->
+            <view class="title_view_right">{{title}}</view>
+        </view>
+    </view>
+</view>

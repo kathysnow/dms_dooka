@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "dms-line":"/components/ifonLine/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-row": "@vant/weapp/row/index",
+  "van-col": "@vant/weapp/col/index"
+  }
+}

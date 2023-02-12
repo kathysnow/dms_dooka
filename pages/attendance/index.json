@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "dms-topimg": "/components/topImg/index",
+    "dms-infobox": "/components/userInfoCon/index",
+    "dms-btnmenu": "/components/btnMenu/index",
+    "ec-canvas": "/ec-canvas/ec-canvas",
+    "dms-conbox": "/components/conBox/index",
+    "dms-calendar": "/components/calendarBox/index"
+  }
+}

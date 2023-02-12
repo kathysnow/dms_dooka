@@ -1,0 +1,15 @@
+<view class="{{isshadow?'containerAll':'containerAll noshadow'}}">
+  <view class="containerBoxItem">
+    <view class="title">{{title}} <text wx:if="{{description!=false}}" class="des">{{description}}</text></view>
+    <view class="total" wx:if="{{total!=false}}">{{total}}</view>
+    <view class="lineBox">
+      <dms-line informations="{{informations}}" isBlod="{{isBlod}}" col="{{col}}" class="dmsline"></dms-line>
+    </view>
+  </view>
+  <van-row wx:if="isZan" class="zanbottom">
+    <van-col span="{{24/zans.length}}" wx:for="{{zans}}" wx:key="index" class="item">
+      <van-icon name="{{item.icon}}" />
+      <text>{{item.value}}</text>
+    </van-col>
+  </van-row>
+</view>

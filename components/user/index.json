@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "dms-topimg": "/components/topImg/index",
+    "dms-userinfo": "/components/userInfoCon/index",
+    "dms-btnmenu": "/components/btnMenu/index",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index",
+    "dms-conbox": "/components/conBox/index",
+    "dms-effectiv": "/components/effectiveBox/index",
+    "dms-calendar": "/components/calendarBox/index"
+  }
+}

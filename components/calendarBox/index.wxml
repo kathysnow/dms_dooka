@@ -1,0 +1,16 @@
+<view class="containerBoxItem">
+    <view class="title">{{title}}</view>
+    <view class="total" wx:if="{{total!=false}}">{{total}}</view>
+
+    <view class="myStepsContainer">
+      <view wx:for="{{ informations }}" wx:key="index" class="{{index==0?'lineItem on ':'lineItem '}}{{item.state}}">
+        <van-image src='/image/step_{{item.state}}.png' class="" fit="contain" width="36" height="36" class="stepImg">
+        </van-image>
+            <view class="des">
+              <view class="b">{{item.label}}</view>
+              <view class="desc">{{item.date}}</view>
+              <view class="desc">{{item.desc}}</view>
+            </view>
+        </view>
+    </view>
+</view>

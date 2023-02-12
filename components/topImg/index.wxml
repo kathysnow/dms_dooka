@@ -1,0 +1,8 @@
+<view class="top" animation="{{acObj}}">
+  <van-image use-loading-slot use-error-slot fit="contain" src='/image/pageBg.jpg' width="100%" height="{{phoneInfoH}}">
+    <van-loading slot="loading" type="spinner" size="12" vertical />
+    <text slot="error">加载失败</text>
+  </van-image>
+ 
+  <dms-navbar title="{{title}}" wx:if="{{isSortTop}}" isShowLeftBtn="{{isShowLeftBtn}}"></dms-navbar>
+</view>

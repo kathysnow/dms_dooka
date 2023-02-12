@@ -1,0 +1,9 @@
+<view wx:for="{{informations}}" wx:key="index" data-index="{{index}}" class="itemInforRow {{item.class?item.class:''}}" style="width:{{100/col}}%">
+  <view wx:if="{{item.isBtn&&item.btnType==='dmsBlueBtn'}}">
+    <dms-bulebtn text="{{item.value}}"></dms-bulebtn>
+  </view>
+  <view wx:else>
+    <text class="title" wx:if="item.label">{{item.label}}</text>
+    <text class="{{isBlod?'b value btnText':'value btnText'}}">{{item.value}}</text>
+  </view>  
+</view>

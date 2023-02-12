@@ -1,0 +1,4 @@
+<view class="myBtnBalck">
+  <text class="title">{{label}}</text>
+  <text class="value">{{text}}</text>
+</view>

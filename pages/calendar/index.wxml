@@ -1,0 +1,13 @@
+<view class="container">
+  <dms-topimg  title="打卡"  isShowLeftBtn="{{false}}"></dms-topimg>
+  <view class="vancellline">
+    <van-cell title="选择日期" value="{{ date }}" bind:click="onDisplay" />
+  </view>
+  
+  <van-calendar show="{{ show }}" bind:close="onClose" bind:confirm="onConfirm" />
+
+  <view class="containerGold">  
+    <dms-calendar title="日历" informations="{{stepsCalendar}}"></dms-calendar>
+  </view>
+  
+</view>

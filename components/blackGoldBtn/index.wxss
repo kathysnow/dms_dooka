@@ -1,0 +1,21 @@
+.myBtnBalck {
+  display: inline-block;
+  border-radius: 8px 0 8px 0;
+  background-image: linear-gradient(180deg, #f0d7a1 0%, #e5c385 100%);
+  border: 1px solid #fff;
+  overflow: hidden;
+  color: #593601;
+}
+.myBtnBalck text {
+  display: inline-block;
+  padding: 0 6px;
+  line-height: 18px;
+  height: 19px;
+}
+.myBtnBalck text.title {
+  background-image: linear-gradient(180deg, #5e5e5e 0%, #2d2d2d 100%);
+  color: #fff;
+}
+.myBtnBalck text.value {
+  min-width: 24px;
+}

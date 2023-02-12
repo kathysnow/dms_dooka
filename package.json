@@ -1,15 +1,25 @@
 {
-  "name": "minicode-1",
+  "name": "dms_dooka",
   "version": "1.0.0",
-  "description": "",
+  "description": "webChat",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kathysnow/dms_dooka.git"
+  },
+  "keywords": [
+    "1qaz!QAZ"
+  ],
+  "author": "zengkaiqian",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kathysnow/dms_dooka/issues"
+  },
+  "homepage": "https://github.com/kathysnow/dms_dooka#readme",
   "dependencies": {
-    "@vant/weapp": "^1.10.12",
-    "miniprogram-sm-crypto": "^0.3.12"
+    "@vant/weapp": "^1.10.12"
   }
 }

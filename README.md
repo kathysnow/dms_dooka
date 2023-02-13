@@ -1,5 +1,5 @@
 # dms_dooka
-webChat原生 + vant-weapp + echarts
+webChat原生 + vant-weapp + echarts + less
 
 npm init
 

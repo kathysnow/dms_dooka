@@ -1,7 +1,6 @@
-<view class="containerBoxItem">
+<view class="containerBoxItem" style="height: 210px;">
   <view class="title">{{title}} <text wx:if="{{description!=false}}" class="des">{{description}}</text></view>
   <vie class="linebox">
-  fadfs
-    <ec-canvas id="eq-echarts" canvas-id="eqecharts" ec="{{lineData}}"></ec-canvas>
+    <ec-canvas id="lineEcharts" canvas-id="lineEcharts" ec="{{lineData}}"></ec-canvas>
   </vie>
 </view>

@@ -44,13 +44,19 @@
 }
 .info .right .cileBg {
   width: 140px;
-  height: 130px;
-  border-radius: 62px;
+  height: 24px;
+  overflow: hidden;
   position: absolute;
   top: -18px;
-  right: 12px;
-  background-color: #fff;
+  right: 10px;
   z-index: 1;
+}
+.info .right .cileBg .before {
+  display: inline-block;
+  width: 140px;
+  height: 130px;
+  border-radius: 72px;
+  background-color: #fff;
 }
 .info .right .containerTotal {
   position: absolute;

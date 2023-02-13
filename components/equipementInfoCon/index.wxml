@@ -16,15 +16,19 @@
       </view>
 
       <view class="right">
-        <view class="cileBg"></view> 
+        <view class="cileBg">
+          <view class="before"></view>
+        </view> 
         
         <view class="containerTotal">
           <ec-canvas id="topEcharts" canvas-id="topEcharts" ec="{{ecData}}"></ec-canvas>
         </view>
-
-        <van-image src='/image/rbg.png' class="dooka" use-loading-slot fit="contain" width="108" height="108">
+        <view class="containerDoo">
+          <canvas id="dooImg" style="width:160px;height:120px" type="2d"></canvas>
+        </view>
+        <!--<van-image src='/image/rbg.png' class="dooka" use-loading-slot fit="contain" width="108" height="108">
           <van-loading slot="loading" type="spinner" size="12" vertical /> 
-        </van-image>
+        </van-image>-->
         
       </view>
 </view>

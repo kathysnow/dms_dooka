@@ -43,13 +43,19 @@
     min-height: 110px;
     .cileBg{
       width: 140px;
-      height: 130px;
-      border-radius: 62px;
+      height: 24px;
+      overflow: hidden;
       position: absolute;
       top:-18px;
-      right:12px;
-      background-color: #fff;
+      right:10px;
       z-index: 1;
+      .before{
+        display: inline-block;
+        width: 140px;
+        height: 130px;
+        border-radius: 72px;
+        background-color: #fff;
+      }
     }
     .containerTotal{
       position: absolute;
@@ -59,11 +65,9 @@
       width: 100%;
       height: 140px;
     }
-    .dooka{
-      position: absolute;
-      right:30px;
-      top:4px;
-      z-index: 999;
+    .containerDoo{
+      position: relative;
+      z-index:3
     }
   }
 }

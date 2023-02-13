@@ -1,4 +1,3 @@
-import * as echarts from '../../ec-canvas/echarts';
 Component({
   data: {
     ecData: {

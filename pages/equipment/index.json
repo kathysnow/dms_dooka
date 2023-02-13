@@ -5,7 +5,7 @@
     "dms-btnmenu": "/components/btnMenu/index",
     "ec-canvas": "/ec-canvas/ec-canvas",
     "dms-conbox": "/components/conBox/index",
-    "dms-linebox": "./linBox/index",
+    "dms-linechart": "./linBox/index",
     "dms-calendar": "/components/calendarBox/index"
   }
 }

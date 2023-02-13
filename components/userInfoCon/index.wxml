@@ -16,7 +16,9 @@
       </view>
 
       <view class="right">
-        <view class="cileBg"></view> 
+        <view class="cileBg">
+          <view class="before"></view>
+        </view> 
         <view class="containerTotal">
           <ec-canvas id="topEcharts" canvas-id="topEcharts" ec="{{ecData}}"></ec-canvas>
         </view>

@@ -11,7 +11,7 @@
   </view>
 
   <view class="containerCommen">  
-    <dms-linebox title="UCP/良率" ></dms-linebox>
+    <dms-linechart title="UCP/良率"></dms-linechart>
   </view>
 
   <view class="containerGold">  

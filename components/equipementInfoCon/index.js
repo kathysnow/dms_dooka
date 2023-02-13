@@ -1,4 +1,3 @@
-import * as echarts from '../../ec-canvas/echarts';
 Component({
   data: {
     ecData: {
@@ -10,89 +9,49 @@ Component({
       {label: '信息',value:'--'},
       {label: '备注',value:'--', class:"blockLab"},
     ],
+    ctx:'',
+    dooCanvas:'',
+    timeout: false,
   },
   attached: function () { 
-    getApp().$globalFunciton.initDmsEcharts(this.selectComponent('#topEcharts'),84,"gauge")
+    getApp().$globalFunciton.initDmsEcharts(this.selectComponent('#topEcharts'),84,"gauge");
+    let timeout = setTimeout(()=>{
+      this.initCanvas();
+      this.setclearTimeout();
+    },600);
+    this.setData({timeout:timeout});
   },
   moved: function () { },
-  detached: function () { },
-  methods: {}
+  detached: function () {
+    
+   },
+  methods: {
+    initCanvas(){
+        const query = this.createSelectorQuery()
+        query.select('#dooImg') // canvas id
+          .fields({ node: true, size: true })
+          .exec((res) => {
+            const canvas = res[0].node
+            const ctx = canvas.getContext('2d')
+            const dpr = wx.getSystemInfoSync().pixelRatio // 屏幕比例
+            let w = res[0].width * dpr, h = res[0].height * dpr;
+            canvas.width = w;
+            canvas.height = h
+            this.drawImg(ctx,canvas,w,h,dpr)
+          })
+    },
+    drawImg(ctx,canvas,w,h,dpr){
+      let minpix = w<h?w:h;
+      const img = canvas.createImage()
+        img.src = "/image/rbg.png"
+        let x = (152*dpr - minpix)/2, y = (136*dpr - minpix)/2
+        img.onload = function() {
+          ctx.drawImage(img, x, y,minpix,minpix)
+        }
+    },
+    setclearTimeout(){
+      if(this.data.timeout) clearTimeout(this.data.timeout);
+      this.setData({timeout: false});
+    }
+  }
 })
-// 初始化图表函数
-function initChart(canvas, width, height, dpr) {
-  let chart = echarts.init(canvas, null, {
-    width: width,
-    height: height,
-    devicePixelRatio: dpr
-  });
-
-  let option = {
-    series: [
-      {
-        type: 'gauge',
-        center: ['50%', '50%'],
-        radius: "100%",
-        startAngle: 200,
-        endAngle: -20,
-        min: 0,
-        max: 100,
-        itemStyle: {
-          color: '#FFAB91'
-        },
-        progress: {
-          show: true,
-          roundCap: true,
-          width: 28,
-          itemStyle:{
-            color:{
-              type: 'radial',
-              x: 0.3,
-              y: 0.7,
-              r: 1,
-              colorStops: [{
-                  offset: 0.6, color: '#f393f9' // 0% 处的颜色
-                }, {
-                  offset: 1, color: '#5785e6' // 100% 处的颜色
-              }],
-            }
-          }
-        },
-        pointer: {
-          show: false
-        },
-        axisLine: {
-          roundCap: true,
-          lineStyle: {
-            width: 28
-          }
-        },
-        axisTick: {
-          show:false
-        },
-        splitLine: {
-          show:false
-        },
-        axisLabel: {
-          show:false
-        },
-        anchor: {
-          show: false
-        },
-        title: {
-          show: false
-        },
-        detail: {
-          show:false,
-        },
-        data: [
-          {
-            value: 84
-          }
-        ]
-      }
-    ]
-  };
-
-  chart.setOption(option);
-  return chart;
-}

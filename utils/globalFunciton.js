@@ -85,7 +85,7 @@ function getGaugeOption(data) {
         axisLine: {
           roundCap: true,
           lineStyle: {
-            width: 28
+            width: 21
           }
         },
         axisTick: {

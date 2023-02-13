@@ -21,7 +21,7 @@ Component({
   },
   lifetimes:{
     attached(){
-      this.setData({phoneInfoH: this.data.phoneInfo*6});
+      this.setData({phoneInfoH: this.data.phoneInfo*4});
       if(this.data.isSortTop){
         this.setH()
       }
@@ -35,7 +35,7 @@ Component({
           delay: 1000
        });
        this.acObj = animation;
-        animation.height(this.data.phoneInfo*3.5).step()
+        animation.height(this.data.phoneInfo*3).step()
         this.setData({
           acObj:  animation.export()
         })

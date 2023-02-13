@@ -1,15 +1,22 @@
 import * as echarts from '../../ec-canvas/echarts';
 Component({
   data: {
-    ecData:{onInit: initChart},
+    ecData: {
+      lazyLoad: true,
+    },
     imgData: "/image/pic.png",
-    level: "3级",
     mationInfoLists: [
       {value: 'xxx生产线', class:"blodLab blockLab"},
       {label: '信息',value:'--'},
       {label: '备注',value:'--', class:"blockLab"},
     ],
   },
+  attached: function () { 
+    getApp().$globalFunciton.initDmsEcharts(this.selectComponent('#topEcharts'),84,"gauge")
+  },
+  moved: function () { },
+  detached: function () { },
+  methods: {}
 })
 // 初始化图表函数
 function initChart(canvas, width, height, dpr) {

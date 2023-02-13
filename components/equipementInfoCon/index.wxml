@@ -19,7 +19,7 @@
         <view class="cileBg"></view> 
         
         <view class="containerTotal">
-          <ec-canvas id="my-echarts" canvas-id="echarts" ec="{{ecData}}"></ec-canvas>
+          <ec-canvas id="topEcharts" canvas-id="topEcharts" ec="{{ecData}}"></ec-canvas>
         </view>
 
         <van-image src='/image/rbg.png' class="dooka" use-loading-slot fit="contain" width="108" height="108">

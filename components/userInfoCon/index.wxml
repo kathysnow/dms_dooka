@@ -18,7 +18,7 @@
       <view class="right">
         <view class="cileBg"></view> 
         <view class="containerTotal">
-          <ec-canvas id="my-echarts" canvas-id="echarts" ec="{{ecData}}"></ec-canvas>
+          <ec-canvas id="topEcharts" canvas-id="topEcharts" ec="{{ecData}}"></ec-canvas>
         </view>
         <view class="containerTxt">
           <view class="cell">

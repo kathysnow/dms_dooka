@@ -1,7 +1,8 @@
 <view class="containerBoxItem">
   <view class="title">
-    {{title}}
-    <text class="{{index<effective?'rateIconLine on':'rateIconLine'}}" wx:key="index" wx:for="{{5}}"></text>
+    <text class="text">{{title}}</text>
+    <text class="{{index<effectiveTotal?'text rateIconLine on':'text rateIconLine'}}" wx:key="index" wx:for="{{allItem}}"></text> 
+    <van-tag type="primary" class="text eff">{{effective}}</van-tag>
   </view>
   <view class="imgTextBox" wx:for="{{ effectiveLists }}" wx:key="index" >
       <image src="/image/iconImg_{{index}}.png" style="width: 10px; height: 12px; vertical-align: middle;" />

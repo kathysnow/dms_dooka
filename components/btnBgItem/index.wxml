@@ -1,0 +1,12 @@
+<view class="btnBgItem">
+  <image src="/image/emptyerror.png" class="bg"></image>
+  <image src="{{informations.image}}" class="iconPng"></image>
+  
+  <view class="label">
+    {{informations.label}}
+  </view>
+
+  <view class="des">
+    {{informations.des}}
+  </view>
+</view>

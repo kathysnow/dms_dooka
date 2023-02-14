@@ -8,7 +8,7 @@
         </van-image>
             <view class="des">
               <view class="b">{{item.label}}</view>
-              <view class="desc">{{item.date}}</view>
+              <view class="des">{{item.date}}</view>
               <view class="desc">{{item.desc}}</view>
             </view>
         </view>

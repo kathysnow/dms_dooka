@@ -10,7 +10,18 @@
     font-size: 10px;
     color: #7e7f82;
     text-align: right;
+    .text{
+      display: inline-block;
+      vertical-align: top;
+      &:first-child{
+        margin-right: 3px;
+      }
+    }
   }
+}
+.eff{
+  margin-left: 3px;
+  margin-top: -2px;
 }
 .rateIconLine{
   display: inline-block;
@@ -18,9 +29,11 @@
   height: 8px;
   border-radius: 5px;
   background-color: #edf6fe;
-  margin-right: 3px;
+  margin-right: 1px;
   border:1px solid #edf6fe;
   vertical-align: middle;
+  margin-bottom: 8px;
+  margin-top: 1px;
   &.on{
     background-color: #a1cfff;
     border-color: #98caff

@@ -1,5 +1,9 @@
 <view class="containerBoxItem" style="height: 210px;">
-  <view class="title">{{title}} <text wx:if="{{description!=false}}" class="des">{{description}}</text></view>
+  <view class="title">
+    {{title}} 
+    <text wx:if="{{description!=false}}" class="des">{{description}}</text>
+    <text>时间选择</text>  
+  </view>
   <vie class="linebox">
     <ec-canvas id="lineEcharts" canvas-id="lineEcharts" ec="{{lineData}}"></ec-canvas>
   </vie>

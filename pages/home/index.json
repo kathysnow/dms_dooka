@@ -1,6 +1,6 @@
 {
   "usingComponents": {
-    "home-page": "/components/user/index",
+    "home-page": "./user/index",
     "van-button": "@vant/weapp/button"
   }
 }

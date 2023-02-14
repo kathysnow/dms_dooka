@@ -11,11 +11,11 @@ Component({
   },
   data: {
     iconBtnLists:[
-      {label:'扫描上班',url:''},
-      {label:'设备',url:'/pages/equipment/index'},
-      {label:'文字3',url:''},
-      {label:'文字4',url:''},
-      {label:'文字5',url:''}
+      {label:'上班',url:'', icon:'iconBtn_0.png'},
+      {label:'下班',url:'', icon:'iconBtn_0.png'},
+      {label:'请假',url:'', icon:'iconBtn_0.png'},
+      {label:'异常上报',url:'', icon:'iconBtn_0.png'},
+      {label:'随拍',url:'', icon:'iconBtn_0.png'}
     ],
     goldLists:[
       {

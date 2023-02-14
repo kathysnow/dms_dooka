@@ -11,7 +11,7 @@
   </view>
 
   <view class="containerCommen">  
-    <dms-linechart title="UCP/良率"></dms-linechart>
+    <dms-linechart title="UCP/良率" description="{{dateTime}}"></dms-linechart>
   </view>
 
   <view class="containerGold">  

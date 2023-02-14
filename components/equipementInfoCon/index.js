@@ -3,14 +3,12 @@ Component({
     ecData: {
       lazyLoad: true,
     },
-    imgData: "/image/pic.png",
+    imgData: "/image/up.png",
     mationInfoLists: [
       {value: 'xxx生产线', class:"blodLab blockLab"},
       {label: '信息',value:'--'},
       {label: '备注',value:'--', class:"blockLab"},
     ],
-    ctx:'',
-    dooCanvas:'',
     timeout: false,
   },
   attached: function () { 

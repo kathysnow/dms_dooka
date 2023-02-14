@@ -1,0 +1,12 @@
+<view class="topDooBtn">
+  <van-row>
+    <van-col span="12">
+        <dms-btnItem informations="{{setInfo_doo}}"></dms-btnItem>
+    </van-col>
+    <van-col span="12">
+      <view class="mr">
+        <dms-btnItem informations="{{setInfo_vice}}"></dms-btnItem>
+      </view>
+    </van-col>
+  </van-row>
+</view>

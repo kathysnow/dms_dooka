@@ -1,15 +1,18 @@
-.info {
-  position: relative;
-  top: -18px;
-  z-index: 2;
+.containerUserInof {
   background-color: #ffffff;
   border-radius: 15px;
+  position: relative;
+  margin-top: -18px;
+  z-index: 2;
+  box-shadow: 0 3px 5px 0 rgba(117, 119, 136, 0.1);
+  padding-bottom: 12px;
+}
+.info {
+  position: relative;
   min-height: 80px;
   display: flex;
   flex-wrap: nowrap;
   padding-bottom: 8px;
-  margin-bottom: -16px;
-  box-shadow: 0 3px 5px 0 rgba(117, 119, 136, 0.1);
 }
 .info .left {
   padding: 16px 0 4px 16px;

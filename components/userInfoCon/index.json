@@ -4,6 +4,7 @@
     "van-image": "@vant/weapp/image/index",
     "dms-infoline": "/components/ifonLine/index",
     "ec-canvas": "/ec-canvas/ec-canvas",
-    "dms-blockglodBtn": "/components/blackGoldBtn/index"
+    "dms-blockglodBtn": "/components/blackGoldBtn/index",
+    "dms-topDobtn": "/components/topDooBtn/index"
   }
 }

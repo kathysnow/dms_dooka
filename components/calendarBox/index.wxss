@@ -58,10 +58,16 @@
   color: #3e4047;
 }
 .myStepsContainer .lineItem.on .des .desc {
-  color: #6e707c;
+  color: #8c8f99;
+  font-size: 10px;
+  margin-bottom: 18px;
+  margin-top: 4px;
 }
 .myStepsContainer .lineItem.success .b {
-  color: #19b480;
+  color: #565c63;
+}
+.myStepsContainer .lineItem.success .des {
+  color: #c0c3c7;
 }
 .myStepsContainer .lineItem.error .b {
   color: #fb9300;

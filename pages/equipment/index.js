@@ -1,11 +1,11 @@
 Page({
   data: {
+    pageName: 'equipment',
     iconBtnLists:[
-      {label:'扫描上班',url:''},
-      {label:'设备',url:'/pages/equipment/index'},
-      {label:'文字3',url:''},
-      {label:'文字4',url:''},
-      {label:'文字5',url:''}
+      {label:'扫码',url:''},
+      {label:'故障打卡',url:''},
+      {label:'停机申请',url:''},
+      {label:'生产打卡',url:''}
     ],  
     informations:[
       {label: 'WT',value:'--'},
@@ -14,6 +14,7 @@ Page({
       {label: 'OTC01',value:'--'},
       {label: 'OTC02',value:'--'}
     ],
+    dateTime: '2023-10-10 11:11:22',
     stepsCalendar:[
       {
         label: '步骤一',
@@ -54,7 +55,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
+    getApp().$globalFunciton.setTabBarIndex(this);
   },
 
   /**

@@ -12,7 +12,10 @@
                 </view>-->
             </view>
             <!-- 标题 -->
-            <view class="title_view_right">{{title}}</view>
+            <view class="title_view_right" wx:if="{{isSortTop}}">{{title}}</view>
+            <view wx:else>
+              <image fit="cover" src="{{'/image/logo.png'}}" style="height:24px; width:160px" />
+            </view>
         </view>
     </view>
 </view>

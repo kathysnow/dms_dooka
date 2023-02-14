@@ -4,5 +4,5 @@
     <text slot="error">加载失败</text>
   </van-image>
  
-  <dms-navbar title="{{title}}" wx:if="{{isSortTop}}" isShowLeftBtn="{{isShowLeftBtn}}"></dms-navbar>
+  <dms-navbar title="{{title}}" isSortTop="{{isSortTop}}" isShowLeftBtn="{{isShowLeftBtn}}"></dms-navbar>
 </view>

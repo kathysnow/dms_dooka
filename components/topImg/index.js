@@ -21,8 +21,8 @@ Component({
   },
   lifetimes:{
     attached(){
-      let h = this.data.phoneInfo*4;
-      if(h<140) h = 140
+      let h = this.data.phoneInfo*4.5;
+      if(h<160) h = 160
       this.setData({phoneInfoH: h});
       if(this.data.isSortTop){
         this.setH()

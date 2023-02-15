@@ -3,7 +3,7 @@ Component({
     informations:{
       type: Object,
       value:{
-        image: "/image/emptyerror.png",
+        image: "/image/robot.png",
         label: "--",
         des: ":)"
       }

@@ -2,10 +2,10 @@ Page({
   data: {
     pageName: 'equipment',
     iconBtnLists:[
-      {label:'扫码',url:''},
-      {label:'故障打卡',url:''},
-      {label:'停机申请',url:''},
-      {label:'生产打卡',url:''}
+      {label:'扫码',url:'',icon:'scanc.png'},
+      {label:'故障打卡',url:'',icon:'eq_err.png'},
+      {label:'停机申请',url:'',icon:'stop.png'},
+      {label:'生产打卡',url:'',icon:'check.png'}
     ],  
     informations:[
       {label: 'WT',value:'--'},

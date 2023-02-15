@@ -32,17 +32,18 @@ Component({
             const canvas = res[0].node
             const ctx = canvas.getContext('2d')
             const dpr = wx.getSystemInfoSync().pixelRatio // 屏幕比例
-            let w = res[0].width * dpr, h = res[0].height * dpr;
+            let w = 160 * dpr, h = 100 * dpr;
             canvas.width = w;
             canvas.height = h
             this.drawImg(ctx,canvas,w,h,dpr)
           })
     },
     drawImg(ctx,canvas,w,h,dpr){
-      let minpix = w<h?w:h;
+      let sc = 0.98
+      let minpix = (w<h?w:h)*sc;
       const img = canvas.createImage()
         img.src = "/image/rbg.png"
-        let x = (152*dpr - minpix)/2, y = (136*dpr - minpix)/2
+        let x = (w - minpix)/2 + 10*dpr, y = (1-sc)*minpix/2
         img.onload = function() {
           ctx.drawImage(img, x, y,minpix,minpix)
         }

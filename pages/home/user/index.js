@@ -11,11 +11,11 @@ Component({
   },
   data: {
     iconBtnLists:[
-      {label:'上班',url:'', icon:'iconBtn_0.png'},
-      {label:'下班',url:'', icon:'iconBtn_0.png'},
-      {label:'请假',url:'', icon:'iconBtn_0.png'},
-      {label:'异常上报',url:'', icon:'iconBtn_0.png'},
-      {label:'随拍',url:'', icon:'iconBtn_0.png'}
+      {label:'上班',url:'', icon:'onWork.png'},
+      {label:'下班',url:'', icon:'offWork.png'},
+      {label:'请假',url:'', icon:'leave.png'},
+      {label:'异常上报',url:'', icon:'uncommon.png'},
+      {label:'随拍',url:'', icon:'takePhone.png'}
     ],
     goldLists:[
       {

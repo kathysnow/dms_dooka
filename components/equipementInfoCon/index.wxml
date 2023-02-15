@@ -25,7 +25,7 @@
           <ec-canvas id="topEcharts" canvas-id="topEcharts" ec="{{ecData}}"></ec-canvas>
         </view>
         <view class="containerDoo">
-          <canvas id="dooImg" style="width:160px;height:120px" type="2d"></canvas>
+          <canvas id="dooImg" style="width:160px;height:100px" type="2d"></canvas>
         </view>
         <!--<van-image src='/image/rbg.png' class="dooka" use-loading-slot fit="contain" width="108" height="108">
           <van-loading slot="loading" type="spinner" size="12" vertical /> 

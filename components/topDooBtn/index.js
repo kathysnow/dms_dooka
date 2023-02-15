@@ -4,11 +4,11 @@ Component({
   data: {
     setInfo_doo: {
       label: "小嘟",
-      image: '/image/rbg.png'
+      image: '/image/robot.png'
     },
     setInfo_vice: {
       label: "呼叫",
-      image: '/image/rbg.png'
+      image: '/image/voice.png'
     }
   },
 })

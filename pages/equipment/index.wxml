@@ -1,5 +1,5 @@
 <view class="container">
-  <dms-topimg title="设备"></dms-topimg>
+  <dms-topimg title="设备" isShowLeftBtn="{{ false }}"></dms-topimg>
   <dms-infobox></dms-infobox>
 
   <view class="containerIconBtn">

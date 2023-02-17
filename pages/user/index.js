@@ -1,6 +1,7 @@
 Page({
   data: {
-    pageName: "user"
+    pageName: "user",
+    phoneInfoH: wx.getSystemInfoSync().safeArea.top,
   },
 
   /**

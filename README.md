@@ -6,3 +6,4 @@ npm init
 npm i @vant/weapp -S --production
 
 npm构建
+npm i
